@@ -1,0 +1,299 @@
+/* Global declaration */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* Root declaration */
+:root{
+    --white: #FFFFFF;
+    --lightBrown: rgba(111, 68, 54, 0.8);
+    --brown: #523728;
+    --darkBrown: rgba(27, 11, 11, 0.75);
+    --tipBrown: #6A4028;
+    --borderBrown: #3D2619;
+
+    --bgBrown: rgba(106, 64, 40, 0.9);
+    --blackBrown: #220404;
+    --black: rgba(0, 0, 0, 0.7);
+    --sectionBackground: rgba(106, 64, 40, 0.94);
+    --yellowWhite: #FFF8E1;
+    --black1: #1D2729;
+    --black2: #555555;
+    --green: #53A623;
+    --dollarBrown: #745545;
+
+    --headBrown: #734B33;
+    --hBrown: #BB6939;
+    --lBrown: #704B33;
+    --shadow: rgba(0, 0, 0, 0.1);
+
+    --orange: #FF9900;
+    --iconWhite: #EDFFEF;
+    --footerBrown: rgba(106, 64, 40, 0.94);
+    --inputWhite: #FCF9F4;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    white-space: nowrap;
+}
+li{
+    list-style: none;
+    cursor: pointer;
+}
+body {
+    background: var(--yellowWhite);
+    box-shadow: 50px 50px 100px 0px rgba(0, 0, 0, 0.30), -50px -50px 100px 0px rgba(0, 0, 0, 0.30);
+}
+header {
+    background: url('images/MAIN\ BGmainbg.png'),lightgray 50% / cover no-repeat;
+    background-position: center;
+    width: min(1440px, 100%);
+    height: 706px;
+}
+.header--wrapper {
+    position: relative;
+    margin: 0 auto;
+    left: 92px;
+    top: 6px;
+}
+nav.nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 110px;
+    position: fixed;
+    width: 80%;
+    z-index: 100;
+}
+.nav--name img {
+    width: 165px;
+    height: 165px;
+}
+.nav--link {
+    border-radius: 10px;
+    background-color: var(--lightBrown);
+}
+.nav--link li {
+    display: inline-block;
+    align-items: center;
+    height: auto;
+    padding: 12px 0;
+}
+.nav--link li > a {
+    color: var(--white);
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.36px;
+
+}
+.nav--link li .nav-link-space1 {
+    padding-left: 28px;
+    padding-right: 57px;
+}
+.nav--link li .nav-link-space3 {
+    padding-left: 57px;
+    padding-right: 29px;
+}
+/* Nav Link With White Background */
+.nav--link_white {
+    border-radius: 10px;
+    background-color: var(--white);
+}
+.nav--link ul .nav--link_white > a {
+    color: var(--lightBrown)!important;
+    padding-left: 26px;
+    padding-right: 25px;
+    font-weight: 600;
+}
+/* Nav SignUp */
+.nav--bar {
+    border: 2px solid var(--brown);
+    border-radius: 38px;
+    background-color: transparent;
+    padding: 12px 22px 13px 21px;
+}
+.nav--bar > a {
+    color: var(--brown);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+/* Hero section begins */
+.hero--section {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    position: relative;
+    padding-left: 126px;
+}
+.hero--section-info {
+    flex: 4 2 500px;
+}
+.hero--section-image {
+    flex: 2 1 200px;
+}
+.hero--section-info h1 {
+    color: var(--brown);
+    z-index: 5;
+    position: absolute;
+    top: 243px;
+    width: 800px;
+    font-family: 'Inika', sans-serif;
+    font-size: 69px;
+    font-weight: 400;
+    line-height: 120%;
+}
+.hero--section-info p {
+    color: var(--darkBrown);
+    position: relative;
+    top: 80px;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+.HSI--btn {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    top: 118px;
+}
+.HSI--btn .one {
+    padding: 19px 30px;
+    border-radius: 100px;
+    border: none;
+    background: var(--tipBrown);
+    border: 1px solid var(--tipBrown);
+    margin-right: 12px;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.10), 0px 5px 11px 0px rgba(0, 0, 0, 0.10), 0px 20px 20px 0px rgba(0, 0, 0, 0.09), 0px 45px 27px 0px rgba(0, 0, 0, 0.05), 0px 81px 32px 0px rgba(0, 0, 0, 0.01), 0px 126px 35px 0px rgba(0, 0, 0, 0.00);
+}
+.HSI--btn button > a {
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 120%;
+}
+.HSI--btn button.two > a {
+    color: var(--brown);
+}
+.HSI--btn .two {
+    padding: 18px 18px 19px 23px;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 100px;
+    border: 1px solid var(--borderBrown);
+    background: transparent;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.10), 0px 5px 11px 0px rgba(0, 0, 0, 0.10), 0px 20px 20px 0px rgba(0, 0, 0, 0.09), 0px 45px 27px 0px rgba(0, 0, 0, 0.05), 0px 81px 32px 0px rgba(0, 0, 0, 0.01), 0px 126px 35px 0px rgba(0, 0, 0, 0.00);
+}
+.HSI--btn .two::before {
+    content: url(images/Vectorplay_btn.svg);
+    padding-right: 5px;
+    position: inherit;
+}
+/* Main : First section */
+#section--one {
+    margin: 0 auto;
+    max-width: 62em;
+}
+section .section--one {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 46px;
+    justify-content: center;
+    align-items: center;
+    margin-top: -100px;
+    margin-bottom: 131px
+}
+.section--one-img img {
+    width: 558px;
+    height: 587px;
+}
+.section--one-info {
+    align-self: flex-end;
+}
+.section--one-info h1 {
+    font-family: 'Inika', sans-serif;
+    color: var(--blackBrown);
+    font-size: 60px;
+    white-space: nowrap;
+    font-weight: 400;
+    line-height: 78px;   
+}
+.section--one-info > p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    color: var(--darkBrown);
+    font-weight: 400;
+    line-height: 36px;
+}
+.section--one-info .SOI--body p {
+    font-family: 'Inter', sans-serif;
+    padding-top: 25px;
+    color: var(--black);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    vertical-align: middle;
+}
+.section--one-info button {
+    background: var(--tipBrown);
+    color: var(--white);
+    padding: 19px 42px 18px 41px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    border-radius: 100px;
+    border: none;
+    box-shadow: 0px 0px 0px 0px #0000001A, 0px 5px 11px 0px #0000001A, 0px 20px 20px 0px #00000017, 0px 45px 27px 0px #0000000D, 0px 81px 32px 0px #00000003, 0px 126px 35px 0px #00000000;
+}
+/* Main Section Two */
+#section--two {
+    background: var(--bgBrown);
+    padding-top: 69px;
+    padding-bottom: 53px;
+}
+section .section--two {
+    margin: 0 auto;
+    max-width: 68em; 
+}
+.section--two > h1 {
+    text-align: center;
+    align-items: center;
+    font-family: 'Inika', sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 83px;
+    color: var(--yellowWhite);
+    margin-bottom: 34px;
+}
+.section--two-container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 68px;
+}
+.section--two-content {
+    background: var(--yellowWhite);
+    border-radius: 41px;
+    padding: 33px 0 40px 0;
+}
+.section--two-img {
+    padding-left: 96px;
+    padding-right: 96px;
+    align-items: center;
+}
+.section--two-content .section--two-img img {
+    width: 163px;
+    height: 158px;
+}
+/* 35px right; 18px left; */

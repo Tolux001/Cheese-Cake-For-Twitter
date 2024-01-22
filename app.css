@@ -296,4 +296,8 @@ section .section--two {
     width: 163px;
     height: 158px;
 }
+.section--two-content .div {
+    padding-right: 35px;
+    padding-left: 18px;    
+}
 /* 35px right; 18px left; */

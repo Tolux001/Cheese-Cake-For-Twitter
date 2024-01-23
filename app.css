@@ -410,8 +410,32 @@ section .section--three {
     border-radius: 19px;
     padding: 34px 43px 20px 43px;
 }
-.section--three-content img {
+.section--three-content > img {
     width: 250px;
     height: 250px;
     border-radius: 16px;
+    margin-bottom: 24px;
+}
+.section--three-content div p {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+    color: var(--hBrown);
+}
+.section--three-content div h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 33px;
+    color: var(--headBrown);
+    margin: 0.5em 0 12px 5px;
+}
+.section--three-content div .STC--INFO {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19px;
+    color: var(--lBrown);
+    padding-bottom: 1em;
 }

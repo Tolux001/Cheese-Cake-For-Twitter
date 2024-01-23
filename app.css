@@ -144,7 +144,7 @@ nav.nav {
     color: var(--brown);
     z-index: 5;
     position: absolute;
-    top: 243px;
+    top: 224px;
     width: 800px;
     font-family: 'Inika', sans-serif;
     font-size: 69px;
@@ -154,16 +154,17 @@ nav.nav {
 .hero--section-info p {
     color: var(--darkBrown);
     position: relative;
-    top: 80px;
+    top: 95px;
     font-family: 'Inter', sans-serif;
     font-size: 18px;
     font-weight: 400;
+    line-height: 28.8px;
 }
 .HSI--btn {
     display: inline-flex;
     align-items: center;
     position: relative;
-    top: 118px;
+    top: 130px;
 }
 .HSI--btn .one {
     padding: 19px 30px;
@@ -277,7 +278,7 @@ section .section--two {
 }
 .section--two-container {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     align-items: center;
     justify-content: center;
     gap: 68px;
@@ -285,6 +286,8 @@ section .section--two {
 .section--two-content {
     background: var(--yellowWhite);
     border-radius: 41px;
+    width: 355px;
+    height: 351px;
     padding: 33px 0 40px 0;
 }
 .section--two-img {
@@ -329,13 +332,38 @@ section .section--two {
     line-height: 27px;
     display: inline-flex;
     align-items: center;
-    color: var();
+    color: var(--dollarBrown);
 }
 .span--container .dollar--span {
     font-size: 18px;
-    color: var();
+    color: var(--green);
     line-height: 22px;
     position: inherit;
 }
-background: linear-gradient(0deg, #53A623, #53A623),
-linear-gradient(0deg, #745545, #745545);
+.span--container .SC--img {
+    display: inline-flex;
+    gap: 5px;
+    align-items: center;
+}
+.span--container span img {
+    width: 16px;
+    height: 15px;
+    padding: 0.12px, 0px, 0.36px, 0.01px;
+}
+.section--two-para {
+    margin-top: 55px;
+    text-align: right;
+    cursor: pointer;
+}
+.para--space {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    color: var(--yellowWhite);
+    padding-right: 27px;
+}
+.section--two-para:hover .para--space {
+    opacity: 0.8;
+    padding-right: 0.5em;
+}

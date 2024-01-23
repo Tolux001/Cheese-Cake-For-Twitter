@@ -439,3 +439,12 @@ section .section--three {
     color: var(--lBrown);
     padding-bottom: 1em;
 }
+.section--three-content div .STC--read {
+    display: inline-flex;
+    align-items: center;
+    color: var(--headBrown);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 23px;
+}

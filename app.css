@@ -277,7 +277,7 @@ section .section--two {
 }
 .section--two-container {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: center;
     gap: 68px;
@@ -300,4 +300,42 @@ section .section--two {
     padding-right: 35px;
     padding-left: 18px;    
 }
-/* 35px right; 18px left; */
+.section--two-content .div h2 {
+    font-family: 'Inika', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 33px;
+    color: var(--black1);
+}
+.section--two-content .div p {    
+    font-family: 'Recursive', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    color: var(--black2);
+    margin-bottom: 22px;
+}
+.span--container {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 142px;
+    align-items: center;
+    justify-content: center;
+}
+.span--container .amount--class {
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 27px;
+    display: inline-flex;
+    align-items: center;
+    color: var();
+}
+.span--container .dollar--span {
+    font-size: 18px;
+    color: var();
+    line-height: 22px;
+    position: inherit;
+}
+background: linear-gradient(0deg, #53A623, #53A623),
+linear-gradient(0deg, #745545, #745545);

@@ -448,3 +448,103 @@ section .section--three {
     font-weight: 500;
     line-height: 23px;
 }
+#footer {
+    background: var(--footerBrown);
+    padding-top: 64px;
+    padding-bottom: 34px;
+}
+footer .footer--wrapper {
+    margin: 0 auto;
+    max-width: 64em; 
+    display: flex;
+    flex-direction: row;
+    gap: 229px;
+    align-items: center;
+}
+.F--section--one div > h1 {
+    font-family: 'Inika', sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 83px;
+    color: var(--yellowWhite);
+}
+.F--section--one div > p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 31px;
+    color: var(--yellowWhite);
+    margin-top: 12px;
+}
+.F--section--one > img {
+    width: 356px;
+    height: 348px;
+    margin-bottom: 45px;
+}
+.footer--icon {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    gap: 24px;
+    align-items: center;
+    margin-bottom: 14px;
+}
+.footer--icon-link {
+    border-radius: 50%;
+    border: 2.5px solid #FFFFFF
+}
+.one {
+    padding: 8px 17px;
+    background: var(--orange);
+}
+.two {
+    padding: 12px 15px;
+    background: var(--iconWhite);
+}
+.footer--contact-info p {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--yellowWhite);
+}
+.F--section--two input {
+    width: 413px;
+    height: 61px;
+    border: none;
+    border-radius: 60px;
+    background: var(--sectionWhite);
+    padding: 20px 0 20px 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.26);  
+    margin-top: 25px;
+}
+.F--section--two input:hover,
+.F--section--two input:active,
+.F--section--two input:focus {
+    font-size: 20px;
+    color: var(--hBrown);
+}
+.F--section--two input::placeholder {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #757575;
+}
+#text--area {
+    width: 417px;
+    height: 161px;
+    border-radius: 26px;
+    padding-top: 23px;
+    padding-left: 24px;
+}
+#section--two-btn {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    text-align: center;
+    padding: 20px 0;
+    background: var(--orange);
+    box-shadow: 0px 4px 4px 0px #00000040;
+    color: #000000;
+}

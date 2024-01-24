@@ -201,15 +201,17 @@
             </div>
         </section>
     </main>
-        <footer>
+        <footer id="footer">
             <div class="footer--wrapper">
-                <div class="section--one">
-                    <h1>Contact Us</h1>
-                    <p>
-                        Need to get in touch with us? Either fill out the form with your inquiry or find the department phone, email you’d like to connect below
-                    </p>
+                <div class="F--section--one">
+                    <div>
+                        <h1>Contact Us</h1>
+                        <p>
+                            Need to get in touch with us? Either fill out the form with your inquiry or find the department phone, email you’d like to connect below
+                        </p>
+                    </div>
                     <img src="images/footer-img.png" alt="footer-cake-image">
-                    <div class="footer--contact-info">
+                    <div class="footer--contact-info" style="display: block;">
                         <span class="footer--icon">
                             <a href="#" class="footer--icon-link one" title="Link to facebook">
                                 <img src="images/Vectorfb.svg" alt="facebook">
@@ -224,16 +226,16 @@
                                 <img src="images/🦆 icon _youtube_youtube.svg" alt="youtube">
                             </a>
                         </span>
-                        <p>Copyright<img class="copyright" src="images/fi-rr-copyrightcopywright.png" alt="copyright-symbol"> 2024 Dscode | All rights reserved</p>
+                        <p>Copyright <img class="copyright" src="images/fi-rr-copyrightcopywright.png" style="color: #6A4028; width: 16px;height: 15px;" alt="copyright-symbol"> 2024 Dscode | All rights reserved</p>
                     </div>
                 </div>
-                <div class="section--two">
+                <div class="F--section--two">
                     <form action="/action_page.php" method="POST">
-                        <input type="text" id="fname" name="fname">
-                        <input type="email" id="email" name="email">
-                            <br> <br>
-                        <textarea rows="5" cols="80" id="text--area">
-                        </textarea>
+                        <div>
+                            <input type="text" id="fname" placeholder="Name" name="fname">
+                            <input type="email" id="email" placeholder="Email" name="email">
+                        </div>
+                        <input type="text" placeholder="Your Message..." id="text--area">
                         <input type="submit" id="section--two-btn" value="Contact us now">
                     </form>
                     <!-- <button class="section--two-btn" type="button">Contact us now</button> -->

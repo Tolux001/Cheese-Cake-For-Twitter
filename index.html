@@ -10,20 +10,60 @@
     <meta data-rh="true" property="og:url" content="https://tolux-cheese-cake.netlify.app/">
     <meta data-rh="true" property="og:image" content="https://i.pinimg.com/736x/be/a5/49/bea549b61377624b1a25e21e50034a04.jpg">
 
+    <!-- Description Image -->
     <link rel="icon" type="image/png" sizes="32x32" href="./images/tolux001.png" />
     <!-- Stylesheet -->
     <link rel="stylesheet" type="text/css" href="app.css" />
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@400;600;700&family=Outfit:wght@500&family=Poppins:wght@400;500;600&family=Recursive&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@400;600;700&family=Outfit:wght@500&family=Poppins:wght@400;500;600&family=Recursive&family=Roboto&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/7e0306378c.js" crossorigin="anonymous" async></script>
     <title>Cheese Cake WebPage</title>
 </head>
-<body contenteditable>
+<body>
         <header>
             <div class="header--wrapper">
+                <!-- Mobile Nav -->
+                <nav class="mobile--nav">
+                    <div class="nav--name">
+                        <a href="index.html" title="Link to home">
+                            <img src="images/LOGO OF CHEESECAKEHeaderlogo.svg" alt="Product_Logo" />
+                        </a>
+                    </div>
+                    <div class="nav--details">
+                        <button title="Sign Up Button" class="nav--bar" type="button">
+                            <a href="#" title="sign-up btn">Sign up</a>
+                        </button>
+                        <button class="nav--toggle" title="Nav Bar">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                    </div>
+                </nav>
+                <!-- NavBar details -->
+                <div class="nav--bar--mobile">
+                    <button title="Cancel button" class="nav-toggle">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <ul>
+                        <li class="nav--link_white">
+                            <a href="#" title="">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link-space1" title="">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link-space2" title="">Menu</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link-space3" title="">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+
                 <!-- Desktop Nav -->
-                <nav class="nav scrolled">
+                <nav class="nav desktop">
                     <div class="nav--name">
                         <a href="index.html" title="Link to home">
                             <img src="images/LOGO OF CHEESECAKEHeaderlogo.svg" alt="Product_Logo" />
@@ -98,7 +138,7 @@
             <div class="section--two">
                 <h1>Our Menu </h1>
                 <div class="section--two-container">
-                    <div class="section--two-content">
+                    <div class="section--two-content container--one">
                         <div class="section--two-img">
                             <img src="images/one.svg" alt="main-one-cake">
                         </div>
@@ -117,7 +157,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="section--two-content">
+                    <div class="section--two-content container--two">
                         <div class="section--two-img">
                             <img src="images/secon.svg" alt="main-two-cake">
                         </div>
@@ -136,7 +176,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="section--two-content">
+                    <div class="section--two-content container--one">
                         <div class="section--two-img">
                             <img src="images/third.svg" alt="main-three-cake">
                         </div>

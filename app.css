@@ -54,6 +54,7 @@ body {
 }
 header {
     background: url('images/MAIN\ BGmainbg.png'),lightgray 50% / cover no-repeat;
+    background-position: center;
     min-height: 706px;
     width: 100%;
 }
@@ -146,7 +147,7 @@ header {
     flex-flow: row nowrap;
     align-items: center;
     justify-content: center;
-    padding: 5%;
+    padding-left: 10%;
 }
 .hero--section-info {
     flex: 70%;
@@ -161,7 +162,8 @@ header {
     font-family: 'Inika', sans-serif;
     font-size: 69px;
     font-weight: 400;
-    line-height: 120%;
+    line-height: 100%;
+    word-spacing: -14px;
 }
 .hero--section-info p {
     color: var(--darkBrown);
@@ -169,6 +171,7 @@ header {
     font-size: 18px;
     font-weight: 400;
     line-height: 28.8px;
+    margin: 10px 0 10px 0;
 }
 .HSI--btn {
     display: inline-flex;

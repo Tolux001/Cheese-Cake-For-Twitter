@@ -54,14 +54,13 @@ body {
 }
 header {
     background: url('images/MAIN\ BGmainbg.png'),lightgray 50% / cover no-repeat;
-    background-position: center;
-    height: 706px;
+    min-height: 706px;
     width: 100%;
 }
 .header--wrapper {
     position: relative;
     margin: 0 auto;
-    max-width: 70em;
+    max-width: 75em;
 }
 .nav {
     display: flex;
@@ -70,7 +69,7 @@ header {
     align-items: center;
     position: fixed;
     top: 1.5em;
-    width: 70em;
+    width: 90%;
     z-index: 100;
     transition: all 0.5s cubic-bezier(0.84, -0.15, 0.12, 1.95);
 }
@@ -107,7 +106,6 @@ header {
     font-size: 16px;
     font-weight: 600;
     line-height: 19.36px;
-
 }
 .nav--link li .nav-link-space1 {
     padding-left: 28px;
@@ -147,21 +145,19 @@ header {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    position: relative;
-    padding-left: 10%;
+    justify-content: center;
+    padding: 5%;
 }
 .hero--section-info {
-    flex: 4 2 350px;
+    flex: 70%;
+    margin-top: 7em;
 }
 .hero--section-image {
-    flex: 2 1 350px;
+    flex: 30%;
 }
 .hero--section-info h1 {
     color: var(--brown);
     z-index: 5;
-    position: absolute;
-    top: 224px;
-    width: 800px;
     font-family: 'Inika', sans-serif;
     font-size: 69px;
     font-weight: 400;
@@ -169,8 +165,6 @@ header {
 }
 .hero--section-info p {
     color: var(--darkBrown);
-    position: relative;
-    top: 95px;
     font-family: 'Inter', sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -179,8 +173,6 @@ header {
 .HSI--btn {
     display: inline-flex;
     align-items: center;
-    position: relative;
-    top: 130px;
 }
 .HSI--btn .one {
     padding: 19px 30px;
@@ -587,7 +579,7 @@ footer .footer--wrapper {
     box-shadow: 0px 4px 4px 0px #00000040;
     color: #000000;
 }
-@media (max-width: 1100px) {
+@media (max-width: 1024px) {
     .header--wrapper {
         padding: 0 40px;
     }
@@ -633,10 +625,9 @@ footer .footer--wrapper {
         width: 100%;
     }
     .hero--section {
-        flex-direction: column-reverse;
-        padding-inline: 5%;
+        flex-direction: column-reverse; 
+        padding: 10%;
     }
-
     .HSI--btn .one {
         padding: 1em 1.5em;
     }
